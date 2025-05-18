@@ -5,7 +5,7 @@ public static void main(String[] args) {
 
     // Estrutura de Dados em Java ☕
 
-    // Começando Com estruturas.Listas ou List<>
+    // Começando Com Listas ou List<>
     //Lists.getInstancia().listas();
 
     // Agora Vamos Para o estruturas Map<>;

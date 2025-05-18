@@ -1,9 +1,6 @@
 package estruturas;
 import java.awt.event.PaintEvent;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Maps {
@@ -20,7 +17,7 @@ public class Maps {
 
         // Map é uma estrutura que guarda CHAVE E VALOR;
 
-        // Criando um Map;
+        // Criando um Map do Tipo HashMap;
         Map<String, Integer> pessoas = new HashMap<>();
 
         // Adicionando Pessoas com Nome e Idade;
@@ -74,6 +71,17 @@ public class Maps {
         for(Map.Entry<String, Integer> e: lPessoas){
             System.out.println("Nome: " + e.getKey()
             + ", idade: " + e.getValue());
+        }
+
+        // Adicionando um Novo Map do Tipo LinkedHashMap
+        // O LinkedHashMap Garante a Ordem de Inserção;
+        System.out.println("\nCriando um Map do Tipo LinkedHashMap: ");
+        Map<String , Integer> senha = new LinkedHashMap<>();
+        senha.put("senha 1", 123);
+        senha.put("senha 2", 321);
+        senha.put("senha 3", 213);
+        for(Map.Entry<String, Integer> lSenha : senha.entrySet()){
+            System.out.println(lSenha.getKey() + ": " + lSenha.getValue());
         }
     }
 }
